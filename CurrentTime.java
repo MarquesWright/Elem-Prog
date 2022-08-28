@@ -20,17 +20,17 @@ public class CurrentTime {
 		long offset = sc.nextInt();
 		
 		// Compute the current time
-		long totalMilliseconds = System.currentTimeMillis(); // total milliseconds
-		long totalSeconds = totalMilliseconds / 1000;		 // total seconds
+		long totalMilliseconds = System.currentTimeMillis(); 		 // total milliseconds
+		long totalSeconds = totalMilliseconds / 1000;		 	 // total seconds
 		long currentSecond = totalSeconds % 60;				 // current second
 		
 		long totalMinutes = totalSeconds / 60;				 // total minutes
 		long currentMinute = totalMinutes % 60;			 	 // current minute in the hour
 		
 		long totalHours = totalMinutes / 60;				 // total hours
-		long currentHour = (totalHours + offset) % 24;					 // current hour
+		long currentHour = (totalHours + offset) % 24;			 // current hour
 		
-    // Display the results
+    		// Display the results
 		System.out.println("The current time is " + currentHour + ":" + 
 				currentMinute + ":" + currentSecond + " GMT");
 
